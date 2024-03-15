@@ -16,11 +16,16 @@ function App() {
     }
   }
 
-  // const [removeCook, setRemoveCook] = useState([]);
+  const [currentCooking, setCurrentCooking] = useState([]);
 
   const removeCook = (item) => {
       const newItems = cooking.filter(cookItem=>cookItem.id!=item.id)
       setCooking(newItems)
+  }
+
+  const currentCook = (item) =>{
+      const newCurrent = [...currentCooking, item];
+      setCurrentCooking(newCurrent)
   }
 
   return (
@@ -29,7 +34,7 @@ function App() {
       <Recipes></Recipes>
       <div className='container mx-auto flex gap-6'>
         <Foods handleCooking={handleCooking}></Foods>
-        <Cart removeCook={removeCook} cooking={cooking}></Cart>
+        <Cart removeCook={removeCook} cooking={cooking} currentCook={currentCook} currentCooking={currentCooking}></Cart>
       </div>
     </>
   )

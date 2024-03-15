@@ -1,11 +1,12 @@
-const Current = () => {
+const Current = ({cooking}) => {
+    const {name, time, calories} = cooking;
     return (
-            <tr className="text-center text-[16px]">
-                <th></th>
-                <th>Name</th>
-                <th>Time</th>
-                <th>Calories</th>
-            </tr>
+        <tr className="bg-base-200">
+            <td>1</td>
+            <td>{name}</td>
+            <td>{time}</td>
+            <td>{calories}</td>
+        </tr>
     );
 };
 

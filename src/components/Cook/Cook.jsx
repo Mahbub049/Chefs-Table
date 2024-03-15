@@ -1,4 +1,4 @@
-const Cook = ({cook, idx, removeCook}) => {
+const Cook = ({cook, idx, removeCook, currentCook}) => {
     const {id, name, time, calories} = cook;
     return (
             <tr className="bg-base-200">
@@ -6,7 +6,7 @@ const Cook = ({cook, idx, removeCook}) => {
                 <td>{name}</td>
                 <td>{time} minutes</td>
                 <td>{calories} calories</td>
-                <button onClick={()=>removeCook(cook)} className="btn font-medium rounded-full px-6 bg-[#0BE58A]">Want to Cook</button>
+                <button onClick={()=>{removeCook(cook), currentCook(cook)}} className="btn font-medium rounded-full px-6 bg-[#0BE58A]">Want to Cook</button>
             </tr>
     );
 };
