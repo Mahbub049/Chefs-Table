@@ -1,6 +1,6 @@
 import { FaRegClock } from "react-icons/fa6";
 import { LuFlame } from "react-icons/lu";
-const Food = ({food}) => {
+const Food = ({food, handleCooking}) => {
     const {id, img, name, description, ingredients, time, calories} = food;
     return (
         <div>
@@ -30,7 +30,7 @@ const Food = ({food}) => {
                         </div>
                     </div>
                     <div className="card-actions">
-                    <button className="btn text-lg font-medium rounded-full px-6 bg-[#0BE58A]">Want to Cook</button>
+                    <button onClick={()=> handleCooking(food)} className="btn text-lg font-medium rounded-full px-6 bg-[#0BE58A]">Want to Cook</button>
                     </div>
                 </div>
             </div>

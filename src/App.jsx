@@ -6,13 +6,22 @@ import Foods from './components/Foods/Foods'
 import Cart from './components/Cart/Cart'
 
 function App() {
+  const [cooking, setCooking] = useState([]);
+
+  const handleCooking = cookItem => {
+    const exists = cooking.find(item=> item.id === cookItem.id);
+    if(!exists){
+      const newCooking = [...cooking, cookItem];
+      setCooking(newCooking);
+    }
+  }
 
   return (
     <>
       <Header></Header>
       <Recipes></Recipes>
       <div className='container mx-auto flex gap-6'>
-        <Foods></Foods>
+        <Foods handleCooking={handleCooking}></Foods>
         <Cart></Cart>
       </div>
     </>
