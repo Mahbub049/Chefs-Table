@@ -1,0 +1,93 @@
+[
+    {
+      "img": "https://i.ibb.co/Y3yXJ5S/1.png",
+      "id": 1,
+      "name": "Spaghetti Bolognese",
+      "description": "Classic Italian pasta dish with savory meat sauce.",
+      "ingredients": ["500g ground beef", "1 onion, chopped", "2 cloves garlic, minced"],
+      "time": 30,
+      "calories": 600
+    },
+    {
+      "img": "https://i.ibb.co/TvtnjP0/2.jpg",
+      "id": 2,
+      "name": "Chicken Alfredo",
+      "description": "Creamy pasta dish with grilled chicken and Parmesan sauce.",
+      "ingredients": ["250g fettuccine pasta", "2 chicken breasts, grilled", "1 cup heavy cream"],
+      "time": 25,
+      "calories": 700
+    },
+    {
+      "img": "https://i.ibb.co/nb9qk97/3.jpg",
+      "id": 3,
+      "name": "Margherita Pizza",
+      "description": "Classic Italian pizza topped with tomato, mozzarella, and basil.",
+      "ingredients": ["1 pizza dough", "1 cup tomato sauce", "200g mozzarella cheese"],
+      "time": 20,
+      "calories": 800
+    },
+    {
+      "img": "https://i.ibb.co/KwbX0pD/4.png",
+      "id": 4,
+      "name": "Caesar Salad",
+      "description": "Fresh salad made with romaine lettuce, croutons, Parmesan cheese, and Caesar dressing.",
+      "ingredients": ["1 head romaine lettuce", "1/2 cup croutons", "1/4 cup grated Parmesan cheese"],
+      "time": 15,
+      "calories": 350
+    },
+    {
+      "img": "https://i.ibb.co/bmjq3kX/5.jpg",
+      "id": 5,
+      "name": "Beef Tacos",
+      "description": "Mexican street food made with seasoned ground beef, salsa, and toppings in a corn tortilla.",
+      "ingredients": ["500g ground beef", "1 packet taco seasoning", "8 small corn tortillas"],
+      "time": 20,
+      "calories": 450
+    },
+    {
+      "img": "https://i.ibb.co/sWthRbZ/6.jpg",
+      "id": 6,
+      "name": "Vegetable Stir-Fry",
+      "description": "Healthy stir-fry made with assorted vegetables and a savory sauce.",
+      "ingredients": ["2 cups mixed vegetables", "1/4 cup soy sauce", "2 cloves garlic, minced"],
+      "time": 20,
+      "calories": 300
+    },
+    {
+      "img": "hhttps://i.ibb.co/ynXrrZ7/7.jpg",
+      "id": 7,
+      "name": "Mushroom Risotto",
+      "description": "Creamy Italian rice dish made with mushrooms, onions, and Parmesan cheese.",
+      "ingredients": ["1 cup Arborio rice", "200g mushrooms, sliced", "1 onion, chopped"],
+      "time": 35,
+      "calories": 550
+    },
+    {
+      "img": "https://i.ibb.co/jfmSSSZ/8.jpg",
+      "id": 8,
+      "name": "Hamburger",
+      "description": "Classic American sandwich made with a beef patty, lettuce, tomato, and pickles.",
+      "ingredients": ["1 beef patty", "1 hamburger bun", "Lettuce, tomato, pickles"],
+      "time": 15,
+      "calories": 500
+    },
+    {
+      "img": "https://i.ibb.co/DLnQ6rs/9.jpg",
+      "id": 9,
+      "name": "Chicken Curry",
+      "description": "Spicy Indian dish made with chicken, curry sauce, and served with rice.",
+      "ingredients": ["2 chicken breasts, diced", "1 cup curry sauce", "2 cups cooked rice"],
+      "time": 40,
+      "calories": 650
+    },
+    {
+      "img": "https://i.ibb.co/K2dznjR/10.jpg",
+      "id": 10,
+      "name": "Caprese Salad",
+      "description": "Simple Italian salad made with tomatoes, mozzarella, basil, and balsamic glaze.",
+      "ingredients": ["2 large tomatoes", "200g fresh mozzarella cheese", "Handful of fresh basil leaves"],
+      "time": 10,
+      "calories": 250
+    }
+  ]
+  
