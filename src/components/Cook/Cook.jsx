@@ -6,7 +6,7 @@ const Cook = ({cook, idx, removeCook, currentCook}) => {
                 <td>{name}</td>
                 <td>{time} minutes</td>
                 <td>{calories} calories</td>
-                <button onClick={()=>{removeCook(cook), currentCook(cook)}} className="btn font-medium rounded-full px-6 bg-[#0BE58A]">Want to Cook</button>
+                <button onClick={()=>{removeCook(cook), currentCook(cook)}} className="btn font-medium rounded-full px-6 bg-[#0BE58A]">Preparing</button>
             </tr>
     );
 };

@@ -39,7 +39,7 @@ const Cart = ({cooking, removeCook, currentCook, currentCooking}) => {
                         </thead>
                         <tbody className="text-center text-[16px]">
                             {
-                                currentCooking.map(cooking=><Current cooking={cooking}></Current>)
+                                currentCooking.map((cooking, idx)=><Current idx={idx} cooking={cooking}></Current>)
                             }
                         </tbody>
                     </table>

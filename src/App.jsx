@@ -4,15 +4,20 @@ import Header from './components/Header/Header'
 import Recipes from './components/Recipes/Recipes'
 import Foods from './components/Foods/Foods'
 import Cart from './components/Cart/Cart'
+import { toast } from 'react-toastify';
 
 function App() {
   const [cooking, setCooking] = useState([]);
+  const notify = () => toast("Wow so easy!");
 
   const handleCooking = cookItem => {
     const exists = cooking.find(item=> item.id === cookItem.id);
     if(!exists){
       const newCooking = [...cooking, cookItem];
       setCooking(newCooking);
+    }
+    else{
+      toast('You have already wanted to cook it!')
     }
   }
 
