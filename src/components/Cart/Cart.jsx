@@ -1,11 +1,12 @@
+import { useState } from "react";
 import Cook from "../Cook/Cook";
 import Current from "../Current/Current";
 
-const Cart = () => {
+const Cart = ({cooking, removeCook}) => {
     return (
         <div className="border-2 rounded-2xl">
             <div className="px-[24px]">
-                <h2 className="text-2xl font-semibold text-center mt-[32px]">Want to cook: 01</h2>
+                <h2 className="text-2xl font-semibold text-center mt-[32px]">Want to cook: {cooking.length}</h2>
                 <hr className="w-2/3 mx-auto mt-4 mb-6"/>
                 <div className="overflow-x-auto mb-[32px]">
                     <table className="table">
@@ -18,9 +19,9 @@ const Cart = () => {
                         </tr>
                         </thead>
                         <tbody className="text-center text-[16px]">
-                            <Cook></Cook>
-                            <Cook></Cook>
-                            <Cook></Cook>
+                            {
+                                cooking.map((cook, idx)=><Cook key={idx} removeCook={removeCook} idx={idx} cook={cook}></Cook>)
+                            }
                         </tbody>
                     </table>
                 </div>
