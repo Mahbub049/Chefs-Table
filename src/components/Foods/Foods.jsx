@@ -12,7 +12,9 @@ const Foods = () => {
 
     return (
         <div className="grid grid-cols-2 gap-6 flex-1">
-            <Food></Food>
+            {
+                foods.map(food=><Food food={food}></Food>)
+            }
         </div>
     );
 };

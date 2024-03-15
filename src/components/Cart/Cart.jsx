@@ -1,3 +1,6 @@
+import Cook from "../Cook/Cook";
+import Current from "../Current/Current";
+
 const Cart = () => {
     return (
         <div className="border-2 rounded-2xl">
@@ -15,13 +18,9 @@ const Cart = () => {
                         </tr>
                         </thead>
                         <tbody className="text-center text-[16px]">
-                        <tr className="bg-base-200">
-                            <td>1</td>
-                            <td>Chicken Caesar Salad</td>
-                            <td>20 minutes</td>
-                            <td>400 calories</td>
-                            <button className="btn font-medium rounded-full px-6 bg-[#0BE58A]">Want to Cook</button>
-                        </tr>
+                            <Cook></Cook>
+                            <Cook></Cook>
+                            <Cook></Cook>
                         </tbody>
                     </table>
                 </div>
@@ -30,12 +29,7 @@ const Cart = () => {
                 <div className="overflow-x-auto mb-[32px]">
                     <table className="table">
                         <thead>
-                        <tr className="text-center text-[16px]">
-                            <th></th>
-                            <th>Name</th>
-                            <th>Time</th>
-                            <th>Calories</th>
-                        </tr>
+                            <Current></Current>
                         </thead>
                         <tbody className="text-center text-[16px]">
                         <tr className="bg-base-200">
