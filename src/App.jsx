@@ -16,7 +16,7 @@ function App() {
       setCooking(newCooking);
     }
     else{
-      toast('You have already wanted to cook it!')
+      toast.error('You already wanted to cook it!')
     }
   }
 
