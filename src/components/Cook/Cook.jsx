@@ -1,5 +1,6 @@
+import PropTypes from 'prop-types';
 const Cook = ({cook, idx, removeCook, currentCook, TimeCalories}) => {
-    const {id, name, time, calories} = cook;
+    const {name, time, calories} = cook;
     return (
             <tr className="bg-base-200 ">
                 <td>{idx+1}</td>
@@ -10,5 +11,14 @@ const Cook = ({cook, idx, removeCook, currentCook, TimeCalories}) => {
             </tr>
     );
 };
+
+Cook.propTypes = {
+    cook: PropTypes.object,
+    idx: PropTypes.number,
+    removeCook: PropTypes.func, 
+    currentCook: PropTypes.func,
+    TimeCalories: PropTypes.func,
+}
+
 
 export default Cook;

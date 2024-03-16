@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 const Current = ({cooking, idx}) => {
     const {name, time, calories} = cooking;
     return (
@@ -9,5 +10,10 @@ const Current = ({cooking, idx}) => {
         </tr>
     );
 };
+
+Current.propTypes = {
+    cooking: PropTypes.object,
+    idx: PropTypes.number,
+}
 
 export default Current;

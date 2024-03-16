@@ -8,7 +8,6 @@ import { toast } from 'react-toastify';
 
 function App() {
   const [cooking, setCooking] = useState([]);
-  const notify = () => toast("Wow so easy!");
 
   const handleCooking = cookItem => {
     const exists = cooking.find(item=> item.id === cookItem.id);
