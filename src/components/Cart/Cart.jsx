@@ -1,6 +1,6 @@
-import { useState } from "react";
 import Cook from "../Cook/Cook";
 import Current from "../Current/Current";
+import PropTypes from 'prop-types';
 
 const Cart = ({cooking, removeCook, currentCook, currentCooking, TimeCalories, timing, calory}) => {
     return (
@@ -54,5 +54,15 @@ const Cart = ({cooking, removeCook, currentCook, currentCooking, TimeCalories, t
         </div>
     );
 };
+
+Cart.propTypes = {
+    cooking: PropTypes.object,
+    removeCook: PropTypes.func, 
+    currentCook: PropTypes.func,
+    currentCooking: PropTypes.object,
+    TimeCalories: PropTypes.func,
+    timing: PropTypes.number,
+    calory: PropTypes.number
+}
 
 export default Cart;

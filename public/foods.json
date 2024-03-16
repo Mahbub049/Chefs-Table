@@ -22,7 +22,7 @@
       "id": 3,
       "name": "Margherita Pizza",
       "description": "Classic Italian pizza topped with tomato, mozzarella, and basil.",
-      "ingredients": ["1 pizza dough", "1 cup tomato sauce", "200g mozzarella cheese"],
+      "ingredients": ["1 pizza dough", "1 cup tomato sauce", "200g mozzarella cheese", "1 handful of fresh basil leaves"],
       "time": 20,
       "calories": 800
     },
@@ -48,7 +48,7 @@
       "img": "https://i.ibb.co/sWthRbZ/6.jpg",
       "id": 6,
       "name": "Vegetable Stir-Fry",
-      "description": "Healthy stir-fry made with assorted vegetables and a savory sauce.",
+      "description": "Deliciously healthy stir-fry prepared with assorted fresh vegetables and a savory homemade sauce.",
       "ingredients": ["2 cups mixed vegetables", "1/4 cup soy sauce", "2 cloves garlic, minced"],
       "time": 20,
       "calories": 300
@@ -66,7 +66,7 @@
       "img": "https://i.ibb.co/jfmSSSZ/8.jpg",
       "id": 8,
       "name": "Hamburger",
-      "description": "Classic American sandwich made with a beef patty, lettuce, tomato, and pickles.",
+      "description": "Traditional American burger crafted with a succulent beef patty, crisp lettuce, ripe tomato slices, and pickles.",
       "ingredients": ["1 beef patty", "1 hamburger bun", "Lettuce, tomato, pickles"],
       "time": 15,
       "calories": 500
@@ -75,7 +75,7 @@
       "img": "https://i.ibb.co/DLnQ6rs/9.jpg",
       "id": 9,
       "name": "Chicken Curry",
-      "description": "Spicy Indian dish made with chicken, curry sauce, and served with rice.",
+      "description": "Fiery Indian delicacy with tender chicken, rich curry sauce, served alongside fluffy basmati rice.",
       "ingredients": ["2 chicken breasts, diced", "1 cup curry sauce", "2 cups cooked rice"],
       "time": 40,
       "calories": 650

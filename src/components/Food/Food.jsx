@@ -1,7 +1,9 @@
 import { FaRegClock } from "react-icons/fa6";
 import { LuFlame } from "react-icons/lu";
+import PropTypes from 'prop-types';
+
 const Food = ({food, handleCooking}) => {
-    const {id, img, name, description, ingredients, time, calories} = food;
+    const {img, name, description, ingredients, time, calories} = food;
     return (
         <div>
             <div className="card w-96 bg-base-100 shadow-xl border-2">
@@ -15,7 +17,7 @@ const Food = ({food, handleCooking}) => {
                     <h2 className="text-lg font-medium">Ingredients: {ingredients.length}</h2>
                     <ul className="my-4 list-disc pl-4 text-[#878787] space-y-1">
                         {
-                            ingredients.map(item=><li>{item}</li>)
+                            ingredients.map((item, idx)=><li key={idx}>{item}</li>)
                         }
                     </ul>
                     <hr/>
@@ -37,5 +39,10 @@ const Food = ({food, handleCooking}) => {
         </div>
     );
 };
+
+Food.propTypes = {
+    food: PropTypes.object.isRequired,
+    handleCooking: PropTypes.func.isRequired
+}
 
 export default Food;
