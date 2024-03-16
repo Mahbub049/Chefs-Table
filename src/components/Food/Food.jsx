@@ -6,9 +6,9 @@ const Food = ({food, handleCooking}) => {
     const {img, name, description, ingredients, time, calories} = food;
     return (
         <div>
-            <div className="card w-96 bg-base-100 shadow-xl border-2">
+            <div className="card lg:w-96 bg-base-100 shadow-xl border-2 mx-5 lg:mx-0">
                 <figure className="px-5 pt-5">
-                    <img src={img} alt="Shoes" className="rounded-xl h-[200px] w-[331px]" />
+                    <img src={img} alt="Shoes" className="rounded-xl w-full lg:h-[200px] lg:w-[331px]" />
                 </figure>
                 <div className="card-body">
                     <h2 className="text-xl font-semibold">{name}</h2>

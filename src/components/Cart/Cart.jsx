@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const Cart = ({cooking, removeCook, currentCook, currentCooking, TimeCalories, timing, calory}) => {
     return (
-        <div className="border-2 rounded-2xl flex-1">
+        <div className="border-2 rounded-2xl flex-1 mx-5 lg:mx-0">
             <div className="px-[24px]">
                 <h2 className="text-2xl font-semibold text-center mt-[32px]">Want to cook: {cooking.length}</h2>
                 <hr className="w-2/3 mx-auto mt-4 mb-6"/>

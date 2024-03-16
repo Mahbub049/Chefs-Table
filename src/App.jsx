@@ -44,7 +44,7 @@ function App() {
     <>
       <Header></Header>
       <Recipes></Recipes>
-      <div className='container mx-auto flex gap-6'>
+      <div className='container mx-auto flex flex-col lg:flex-row gap-6 mb-[100px]'>
         <Foods handleCooking={handleCooking}></Foods>
         <Cart timing={timing} calory={calory} TimeCalories={TimeCalories} removeCook={removeCook} cooking={cooking} currentCook={currentCook} currentCooking={currentCooking}></Cart>
       </div>
