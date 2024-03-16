@@ -60,9 +60,9 @@ const Header = () => {
                 <img src="" alt="" />
                 <div className="bg-[linear-gradient(0deg,rgba(3,7,18,0.50),rgba(3,7,18,0.00)),url(/src/assets/chef.png)] bg-cover bg-no-repeat h-[420px] lg:h-[600px] bg-center rounded-3xl text-center text-white flex flex-col justify-center items-center">
                     <h1 className="text-4xl lg:text-[52px] font-bold leading-[40px] lg:leading-[86px] text-white py-4">Discover an exceptional cooking class <br /> tailored for you!</h1>
-                    <p className="px-5 lg:px-0 lg:w-[691px] mx-auto leading-7">Learn and Master Basic Programming, Data Structures, Algorithm, OOP, Database and solve 500+ coding problems to become an exceptionally well world-class Programmer.</p>
+                    <p className="px-5 lg:px-0 lg:w-[691px] mx-auto leading-7">Indulge in a culinary odyssey: From tantalizing pastas to savory pizzas, explore a world of flavors and inspiration with our diverse recipes.</p>
                     <div className="mt-10 flex gap-6">
-                        <button className="text-black bg-[#0BE58A] px-8 py-5 text-xl font-bold rounded-full hover:opacity-80">Buy Tickets</button>
+                        <button className="text-black bg-[#0BE58A] px-8 py-5 text-xl font-bold rounded-full hover:opacity-80">Explore Now</button>
                         <button className="text-white px-8 py-5 text-xl font-bold rounded-full hover:opacity-80 border-2 border-white">Our Feedback</button>
                     </div>
                 </div>

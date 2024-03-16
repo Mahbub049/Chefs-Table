@@ -2,7 +2,7 @@ import { useState } from "react";
 import Cook from "../Cook/Cook";
 import Current from "../Current/Current";
 
-const Cart = ({cooking, removeCook, currentCook, currentCooking}) => {
+const Cart = ({cooking, removeCook, currentCook, currentCooking, TimeCalories, timing, calory}) => {
     return (
         <div className="border-2 rounded-2xl flex-1">
             <div className="px-[24px]">
@@ -20,7 +20,7 @@ const Cart = ({cooking, removeCook, currentCook, currentCooking}) => {
                         </thead>
                         <tbody className="text-center text-[16px]">
                             {
-                                cooking.map((cook, idx)=><Cook key={idx} currentCook={currentCook} removeCook={removeCook} idx={idx} cook={cook}></Cook>)
+                                cooking.map((cook, idx)=><Cook key={idx} TimeCalories={TimeCalories} currentCook={currentCook} removeCook={removeCook} idx={idx} cook={cook}></Cook>)
                             }
                         </tbody>
                     </table>
@@ -39,8 +39,14 @@ const Cart = ({cooking, removeCook, currentCook, currentCooking}) => {
                         </thead>
                         <tbody className="text-center text-[16px]">
                             {
-                                currentCooking.map((cooking, idx)=><Current idx={idx} cooking={cooking}></Current>)
+                                currentCooking.map((cooking, idx)=><Current TimeCalories={TimeCalories} key={idx} idx={idx} cooking={cooking}></Current>)
                             }
+                            <tr className="font-medium">
+                                <td></td>
+                                <td></td>
+                                <td>Total Time = <br /> {timing} minutes</td>
+                                <td>Total Calories = <br /> {calory} Calories</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
